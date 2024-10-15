@@ -1,0 +1,57 @@
+/* Container holding the input and button */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: black;
+    padding: 5px;
+    border-radius: 5px;
+    width: fit-content;
+    transition: width 0.4s ease;
+    position: relative;
+  }
+  
+  /* Initially, the input is small and hidden */
+  .search-input {
+    width: 1px;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    border: none;
+    outline: none;
+    transition: width 0.4s ease;
+    opacity: 0;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  
+  /* Expands the input when focused */
+  .search-input.expanded {
+    width: 200px; /* Change width to how much you want it to expand */
+    opacity: 1;
+    cursor: text;
+    padding: 10px;
+  }
+  
+  /* Search button styling */
+  .search-button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+    outline: none;
+    padding: 10px;
+    
+  }
+  
+  /* Adding hover effect on the button */
+  .search-button:hover {
+    color: gray;
+  }
+  
+  /* Placeholder styling */
+  .search-input::placeholder {
+    color: white;
+    opacity: 0.6;
+  }
+  
